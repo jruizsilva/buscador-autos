@@ -1,0 +1,133 @@
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #eee;
+  }
+}
+
+.header {
+  padding: 32px;
+  background-color: #29a7f0;
+}
+
+.header .title {
+  font-size: 48px;
+  font-family: "Staatliches";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    background-color: transparent;
+  }
+}
+
+.main {
+  min-height: 400px;
+  padding: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.main h2 {
+  font-size: 48px;
+  font-family: "Staatliches";
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.main .lista-autos .lista-autos__li {
+  padding: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.main .lista-autos .lista-autos__li .lista-autos__paragraph {
+  line-height: 22px;
+  font-family: "Staatliches";
+  font-size: 18px;
+  text-align: center;
+}
+
+.container-form {
+  margin-bottom: 80px;
+}
+
+.container-form .form {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.container-form .form .campo {
+  margin-bottom: 16px;
+}
+
+.container-form .form .campo label {
+  display: block;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-family: "Arial";
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.container-form .form .campo select {
+  padding: 8px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.container-form .form .campo select:focus {
+  border-color: #29a7f0;
+}
+
+.container-form .form .campo select option {
+  display: block;
+  background-color: white;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container-form .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-form .form .campo {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 150px;
+        flex-basis: 150px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-bottom: 8px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,106 @@
+@import "variables";
+@import "mixins";
+
+body {
+	@media screen and (min-width: 1024px) {
+		background-color: $light-white;
+	}
+}
+.header {
+	padding: 32px;
+	background-color: $light-blue;
+	.title {
+		@include title-center;
+	}
+	@media screen and (min-width: 1024px) {
+		background-color: transparent;
+	}
+}
+.main {
+	min-height: 400px;
+	padding: 32px;
+	@media screen and (min-width: 1024px) {
+		background-color: white;
+		max-width: 900px;
+		margin: 0 auto;
+		margin-bottom: 64px;
+		@include box-shadow;
+	}
+	h2 {
+		@include title-center;
+		margin-bottom: 32px;
+	}
+	.lista-autos {
+		.lista-autos__li {
+			padding: 24px;
+			border-bottom: 1px solid #ccc;
+			.lista-autos__paragraph {
+				line-height: 22px;
+				font: {
+					family: $fuente;
+					size: 18px;
+				}
+				text: {
+					align: center;
+				}
+			}
+		}
+	}
+}
+.container-form {
+	.form {
+		max-width: 90%;
+		margin: 0 auto;
+		.campo {
+			label {
+				display: block;
+				color: $light-dark;
+				font: {
+					size: 16px;
+					family: "Arial";
+					weight: 600;
+				}
+				margin-bottom: 8px;
+			}
+			select {
+				padding: 8px;
+				width: 100%;
+				background-color: transparent;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				font-size: 14px;
+				&:focus {
+					border: {
+						color: $light-blue;
+					}
+				}
+				option {
+					display: block;
+					background-color: white;
+					padding-left: 8px;
+					outline: none;
+					border: none;
+					box-shadow: none;
+				}
+			}
+			margin-bottom: 16px;
+		}
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 16px;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			.campo {
+				flex-grow: 1;
+				flex-basis: 150px;
+				flex-shrink: 0;
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	margin-bottom: 80px;
+}
